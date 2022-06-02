@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hyeok Lim">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dverse.css') }}">
+
+    <!-- fabicon setting -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
+
+    <!-- webfont spooqa han sans -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+    <title>Dverse(Demo)</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="head_container">
+                <form action="\dverse\list"><button class="back_btn"><i class="fas fa-chevron-left"></i></button></form>
+                <div class="page_title">나의 지구를 지켜줘</div>
+                <div">
+            </div>
+        </div>
+        </div>
+    </header>
+    <section>
+        <div class="inner">
+            <div class="detail_container">
+                <div class="img_container">
+                    <img src="{{ url_for('static', filename='img/Kkumdori_alone.png') }}" class="detail_img">
+                </div>
+                <div class="text_container">
+                    <div class="detail_title">미래의 연구원 꿈돌이와 함께 지구 구하기</div>
+                    <div class="detail_desc">극환경오염으로 공기도 사서 마셔야할 만큼 지구의 상태가 악화되었어. 이를 해결하려 특수 개발된 로봇 연구원 꿈돌이와 함께 푸르른 지구를 되돌리자!  지구를 살리기 위한 연구를 하며 오랜시간을 보내여 연구를 완성했지만, 정신을 차려보니 이미 상황이 급속도로 악화되었어. 현재의 기술력과 문제 해결 프로토콜을 꿈돌이 내부에 이식시키고, 그와 함께 과거와 현재를 오가며 지구를 구해야 해!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <div class="detail_btn_container">
+                <button class="detail_btn">시나리오 진입하기</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner">
+          <div class="footer-message">We want everyone to discover new side of Daejeon.</div>
+          <div class="footer-contact">E-mail: lhlh0128@gmail.com</div>
+          <div class="footer-copyright">Copyright 2021 © All rights reserved.</div>
+        </div>
+      </footer>
+
+      <script src="/Dverse_demo/static/js/main_js.js"></script>
+</body>
+
+</html>

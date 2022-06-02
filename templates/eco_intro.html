@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hyeok Lim">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dverse.css') }}">
+    
+    <!-- fabicon setting -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
+
+    <!-- webfont spooqa han sans -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+    <title></title>
+
+</head>
+<body>
+
+    <header>
+        <div class="inner">
+            <div class="head_container">
+                <form action="\dverse\list"><button class="back_btn"><i class="fas fa-chevron-left"></i></button></form>
+                <div class="page_title">나의 지구를 지켜줘</div>
+                <div">
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="inner">
+            <div class="intro_container">
+                <video width="100%" height="auto" autoplay="autoplay" muted controls>
+                    <source src="{{ url_for('static', filename='img/ecointro.mp4') }}" type="video/mp4">
+                    일시적인 문제로 영상을 재생할 수 없습니다.
+                </video>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hyeok Lim">
+
+    <link rel="stylesheet" href="/static/css/dverse.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dverse.css') }}">
+    
+    <!-- fabicon setting -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
+
+    <!-- webfont spooqa han sans -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>    
+    
+    <title>Dverse(Demo)</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="head_container">
+                <div class="nav_btn"><i class="fas fa-bars"></i></div>
+                <div class="page_title">디버스 시나리오</div>
+                <div class="map_btn"><i class="fas fa-map" onclick="javascript:moveToDetail()"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="location">
+        <div class="inner">
+            <div class="present_location">현위치: 대전광역시 석교동, 대한민국</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <div class="select_card_container">
+                
+                <ul class="select_list">
+                    <li class="select_card">
+                        <img src=" {{ url_for('static', filename='/img/DocandKkum.png') }} " alt="Doc And Kkum" class="card_img">
+                        <div class="card_text_container">
+                            <div class="card_title">박사와 꿈돌이</div>
+                            <div class="card_desc">&nbsp박사님의 애착 로봇 꿈돌이와 함께 디버스의 세계로 여행을 떠나보자!</div>
+                            <div class="detail_btn_container">
+                                <button name="detail_btn" class="detail_btn" onclick="javascript:moveToDetail()">자세히보기</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="select_card">
+                        <img src=" {{ url_for('static', filename='/img/losttime2.jpeg') }} " alt="Lost Time in 93'" class="card_img">
+                        <div class="card_text_container">
+                            <div class="card_title">로스트 타임 인 93'</div>
+                            <div class="card_desc">&nbsp극적으로 개발된 타임머신이 상용화된 어느 미래, 한 여행사가 모집한 타임머신 대전엑스포 여행 패키지에 참여하게 된 나. 관광을 마치고 귀환하려는 도중 발견된 타임머신의 치명적인 결함. 돌아가기 위해선 특정 부품들이 필요하다. 우리는 익숙한 듯 낯선 이 순간, 이 장소에서 벗어날 수 있을까?</div>
+                            <div class="detail_btn_container">
+                                <form action="\dverse\losttime"><button name="detail_btn" class="detail_btn" onclick="flask:move_to_detail2()">자세히보기</button></form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="select_card">
+                        <img src="{{ url_for('static', filename='/img/losttime1.jpeg') }}" alt="Save My Earth!" class="card_img">
+                        <div class="card_text_container">
+                            <div class="card_title">나의 지구를 지켜줘</div>
+                            <div class="card_desc">&nbsp환경오염으로 공기도 사서 마셔야할 만큼 지구의 상태가 악화되었어. 이를 해결하려 특수 개발된 로봇 연구원 꿈돌이와 함께 푸르른 지구를 되돌리자!  지구를 살리기 위한 연구를 하며 오랜시간을 보내여 연구를 완성했지만, 정신을 차려보니 이미 상황이 급속도로 악화되었어. 현재의 기술력과 문제 해결 프로토콜을 꿈돌이 내부에 이식시키고, 그와 함께 과거와 현재를 오가며 지구를 구해야 해!</div>
+                            <div class="detail_btn_container">
+                                    <form action="\dverse\eco"><button name="detail_btn" class="detail_btn" onclick="flask:move_to_detail2()">자세히보기</button></form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="inner">
+          <div class="footer-message">We want everyone to discover new side of Daejeon.</div>
+          <div class="footer-contact">E-mail: lhlh0128@gmail.com</div>
+          <div class="footer-copyright">Copyright 2021 © All rights reserved.</div>
+        </div>
+      </footer>
+      
+      <script>
+          function moveToDetail() {
+              alert("준비중입니다.")
+          }
+      </script>
+</body>
+</html>
+
+<form action="\dverse\list" class="welcome_btn"><button type="submit" class="login_btn" onclick="func1()">진입하기</button></form>

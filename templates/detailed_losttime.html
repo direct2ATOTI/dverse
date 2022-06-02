@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hyeok Lim">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dverse.css') }}">
+
+    <!-- fabicon setting -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
+
+    <!-- webfont spooqa han sans -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+    <title>Dverse(Demo)</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="head_container">
+                <form action="\dverse\list"><button class="back_btn"><i class="fas fa-chevron-left"></i></button></form>
+                <div class="page_title">로스트 타임 인 93</div>
+                <div">
+            </div>
+        </div>
+        </div>
+    </header>
+    <section>
+        <div class="inner">
+            <div class="detail_container">
+                <div class="img_container">
+                    <img src="{{ url_for('static', filename='/img/losttime2.jpeg') }}" class="detail_img">
+                </div>
+                <div class="text_container">
+                    <div class="detail_title">시간 속에서, 우리는 길을 잃었다</div>
+                    <div class="detail_desc">극적으로 개발된 타임머신이 상용화된 어느 미래, 한 여행사가 모집한 타임머신 대전엑스포 여행 패키지에 참여하게 된 나. 관광을 마치고 귀환하려는 도중 발견된 타임머신의 치명적인 결함. 돌아가기 위해선 특정 부품들이 필요하다. 우리는 익숙한 듯 낯선 이 순간, 이 장소에서 벗어날 수 있을까?</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="inner">
+            <div class="detail_btn_container">
+                <button class="detail_btn">시나리오 진입하기</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner">
+          <div class="footer-message">We want everyone to discover new side of Daejeon.</div>
+          <div class="footer-contact">E-mail: lhlh0128@gmail.com</div>
+          <div class="footer-copyright">Copyright 2021 © All rights reserved.</div>
+        </div>
+      </footer>
+</body>
+
+</html>

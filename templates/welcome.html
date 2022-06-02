@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hyeok Lim">
+
+    <!-- <meta http-equiv="refresh" content="5; url=/Dverse_demo/templates/select_list.html"> -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dverse.css') }}">
+    
+    <!-- fabicon setting -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
+
+    <!-- webfont spooqa han sans -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    
+    <title>디버스(Prototype)</title>
+
+</head>
+<body>
+    <div class="inner">
+        <div class="login_container">
+            <div class="logo_container">
+                <img id="dverse_logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="D-verse Logo">
+            </div>
+            <h1 class="catch_phrase">디버스</h1>
+            <h3 class="catch_phrase_small">Another Daejeon in parallel universe.</h3>
+
+            <div class="welcome">
+                <div class="welcome_txt"><b>{{ name }}</b>님, 디버스의 세상에 오신 것을 환영합니다.<br>아래의 버튼을 누르면 디버스의 시나리오를 볼 수 있습니다.</div><br>
+                <form action="\dverse\list" class="welcome_btn"><button type="submit" class="login_btn" onclick="func1()">진입하기</button></form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="inner">
+          <div class="footer-message">We want everyone to discover new side of Daejeon.</div>
+          <div class="footer-contact">E-mail: lhlh0128@gmail.com</div>
+          <div class="footer-copyright">Copyright 2021 © All rights reserved.</div>
+        </div>
+      </footer>
+
+</body>
+</html>
