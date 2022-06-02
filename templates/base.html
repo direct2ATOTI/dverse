@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Hyeok Lim">
+
+    <!-- <meta http-equiv="refresh" content="5; url=/Dverse_demo/templates/select_list.html"> -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dverse.css') }}">
+    
+    <!-- fabicon setting -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
+
+    <!-- webfont spooqa han sans -->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    
+    <title>{% block title %}{% endblock%}</title>
+
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div class="inner">
+          <div class="footer-message">We want everyone to discover new side of Daejeon.</div>
+          <div class="footer-contact">E-mail: lhlh0128@gmail.com</div>
+          <div class="footer-copyright">Copyright 2021 © All rights reserved.</div>
+        </div>
+      </footer>
+</body>
+</html>

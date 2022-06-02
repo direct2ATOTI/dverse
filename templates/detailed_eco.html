@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="author" content="Hyeok Lim">
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/dverse.css') }}">
-
-    <!-- fabicon setting -->
-    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
-    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/0b4d53158c.js" crossorigin="anonymous"></script>
-
-    <!-- webfont spooqa han sans -->
-    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-
-    <title>Dverse(Demo)</title>
-</head>
-
-<body>
+{% extends "base.html" %}
+{% block title %}나의 지구를 지켜줘{% endblock %}
+{% block content %}
     <header>
         <div class="inner">
             <div class="head_container">
@@ -64,6 +42,4 @@
       </footer>
 
       <script src="/Dverse_demo/static/js/main_js.js"></script>
-</body>
-
-</html>
+{% endblock %}
